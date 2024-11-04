@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    
+    font-family: "Roboto", sans-serif;
+    background-color: #4e2a84;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+
+header {
+    background-color: #4e2a84;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-menu a:hover {
+    color: rgb(252, 255, 173);
+}
+
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#inicio {
+    background-color: #fffdff;
+}
+
+#nosotros {
+    background-color: #fffdff;
+}
+
+#productos,
+#recetas {
+    background-color: #4e2a84;
+    color: white;
+}
+
+h1 {margin-bottom: 20px;
+    font-size: 32px;
+}
+
+p {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #4e2a84;
+    color:  #4e2a84;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Estilo para la sección de inicio */
+#inicio {
+    height: 40vh; /* Altura completa de la ventana */
+    background-image: url('Imagenes/fondoladrillo.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* Cambiar a columna para apilar los elementos verticalmente */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    position: relative; /* Para el logo */
+}
+
+/* Estilos para centrar el logo */
+.logo-container {
+    display: flex; /* Usamos flexbox para centrar el logo */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 20px; /* Espacio entre el logo y la frase de bienvenida */
+}
+
+.logo {
+    max-width: 30%; /* Ajusta el ancho máximo del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    z-index: 1; /* Asegura que el logo esté sobre la imagen de fondo */
+}
+
+
+
+
+
+#nosotros {
+    background-color:  rgb(83, 6, 122);
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.nosotros-content {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.nosotros-imagen {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nosotros-texto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 50%;
+    
+}
+
+.nosotros-texto h2 {
+    color: #4e2a84;
+    margin-bottom: 10px;
+}
+
+.nosotros-texto p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+
+}
+
+
+
+
+
+/* Estilo para la sección de productos */
+#productos {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    color: rgb(83, 6, 122);
+    display: flex; /* Usar flexbox para alinear los elementos */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}
+
+#productos h1 {
+    font-size: 32px;
+    margin: 0 10px; /* Espacio entre el texto y la imagen */
+}
+
+.decorative-image {
+    width: 100px; /* Tamaño de la imagen */
+    height: auto;
+    margin-left: 10px; /* Espacio a la izquierda de la imagen */
+    opacity: 0.9; /* Transparencia ligera */
+}
+
+#productos p {
+    color: #fffbf1; /* Color para los párrafos */
+}
+
+.producto {
+    background-color: #330072;
+    color: rgb(83, 6, 122);
+    padding: 50px 20px;
+}
+
+#productos p {
+    color: #fffbf1; /* Color para los párrafos */
+}
+
+.producto {
+    background-color: #330072;
+    color:  rgb(83, 6, 122);
+    padding: 50px 20px;
+}
+
+/* Estilos del carrusel */
+.carousel-container {
+    position: relative;
+    width: 100%; /* Asegura que el contenedor use el 100% del espacio disponible */
+    margin: 0 auto;
+    display: flex; /* Flexbox para alinear elementos */
+    align-items: center; /* Alinear los botones y el carrusel verticalmente */
+    justify-content: space-between; /* Espacio entre los elementos del carrusel */
+    padding: 0 10px; /* Espacio a los lados del carrusel para las flechas */
+}
+
+
+
+
+.carousel-button {
+    background-color: rgb(239, 239, 239);
+    border: none; /* Quita el borde si no es necesario */
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1;
+}
+
+
+.carousel-button.left {
+    left: 10px;
+}
+
+.carousel-button.right {
+    right: 10px;
+}
+
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(100% - 100px); /* Ancho del carrusel menos el espacio para las flechas */
+}
+
+.carousel-item {
+    min-width: calc(33.33% - 20px); /* Ajuste para mostrar tres elementos con margen */
+    margin-right: 20px; /* Margen entre elementos del carrusel */
+    text-align: center;
+    background-color: rgb(83, 6, 122);
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+.carousel-item img {
+    width: 100%;
+    border-radius: 8px;
+    animation: moveImage 5s ease-in-out infinite;
+}
+
+
+
+/* Estilo para la sección de recetas */
+#recetas {
+    height: auto; /* Permite que la altura se ajuste al contenido */
+    background-image: url('Imagenes/fondoladrillo.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0; /* Espacio superior e inferior */
+}
+
+.recetas-container {
+    display: flex;
+    justify-content: center; /* Centra las imágenes en la página */
+    gap: 20px; /* Espacio entre las imágenes */
+    padding-top: 20px;
+}
+
+.receta-box {
+    display: flex;
+    width: 400px; /* Ajusta el ancho de la caja si lo deseas */
+    overflow: hidden;
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.receta-box img {
+    width: 100%; /* Ajusta la imagen para que ocupe el 100% del ancho de la caja */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados en todas partes */
+}
+
+
+.receta-texto {
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Coloca el texto en una columna */
+    justify-content: center; /* Centra el texto verticalmente */
+    flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+}
+
+.receta-texto h2 {
+    margin: 0;
+    font-size: 30px;
+    color: rgb(83, 6, 122);
+}
+
+.receta-texto p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: rgb(83, 6, 122);
+}
+
+#receta-helado,
+#receta-cheesecake,
+#receta-brownie {
+    background-image: url('Imagenes/fondoladrillo.jpg'); /* Imagen de fondo */
+    background-color: #fffdff; /* Color de fondo sólido */
+    color: rgb(83, 6, 122);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.receta-contenido {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.receta-imagen {
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(83, 6, 122);
+}
+
+.receta-info {
+    max-width: 500px;
+    text-align: left;
+}
+
+.receta-info h2 {
+    color: rgb(83, 6, 122);
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.receta-info ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.receta-info p {
+    margin: 8px 0;
+}
+
+
+#receta-helado
+#receta-cheesecake,
+#receta-brownie {
+    background-color: #fffdff;
+    color: rgb(83, 6, 122);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.receta-contenido {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.receta-imagen {
+    width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(83, 6, 122);
+}
+
+.receta-info {
+    max-width: 500px;
+    text-align: left;
+}
+
+.receta-info h2 {
+    color: #4e2a84;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.receta-info ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.receta-info p {
+    margin: 8px 0;
+}
+
+/* Pie de página */
+footer {
+    background-color: #4e2a84;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Efecto hover para agrandar las cajas */
+.receta-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación suave de movimiento o zoom */
+@keyframes moveImage {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 8px;
+    animation: moveImage 2s ease-in-out infinite; /* Reduce la duración para mayor dinamismo */
+}
+
+
+/* Ajuste del carrusel para pantallas grandes */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Carrusel responsivo en pantallas pequeñas */
+@media (max-width: 768px) {
+    .carousel {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .carousel-item {
+        min-width: 250px;
+        flex: 0 0 auto;
+        scroll-snap-align: center;
+        margin-right: 10px;
+    }
+}
+
+/* Ajustes de estilo generales */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
